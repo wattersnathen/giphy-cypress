@@ -7,6 +7,8 @@
 
 *Note*: This project was developed on a Windows 10 machine
 
+### Specs are located under cypress/integration
+
 ### Running Tests
 
 * To run all tests from the command line: `npm test`
