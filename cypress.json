@@ -1,3 +1,7 @@
 {
-    "baseUrl": "https://giphy.com"
+    "baseUrl": "https://giphy.com",
+    "retries": {
+        "openMode": 0,
+        "runMode": 2
+    }
 }

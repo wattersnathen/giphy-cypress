@@ -10,4 +10,4 @@
 ### Running Tests
 
 * To run all tests from the command line: `npm test`
-* To run all/selected tests from the Cypress dashboard: `npx cypress open` then pick which spec(s) to ru
+* To run all/selected tests from the Cypress dashboard: `npx cypress open` then pick which spec(s) to run
