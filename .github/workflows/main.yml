@@ -22,6 +22,5 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - name: Run Suites
-        if: ${{ github.events.inputs.suite }}
         run: |
           echo ${{ github.events.inputs.suite }}
