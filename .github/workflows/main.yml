@@ -14,6 +14,11 @@ jobs:
   run-suites:
     runs-on: ubuntu-latest
     steps:
-      - name: Run Suites
+      - name: Run Regressions By Suite
+        if: ${{ github.event.inputs.suite }}
         run: |
           echo "suites: ${{ github.event.inputs.suite }}"
+      - name: Run Regressions
+        if: ${{ !github.event.inputs.suite }}
+        run: |
+          echo "regressions running"
