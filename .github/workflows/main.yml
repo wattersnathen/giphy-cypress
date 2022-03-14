@@ -14,17 +14,14 @@ on:
   workflow_dispatch:
     inputs:
       suite:
-        type: choice
+        type: string
         description: What suites to run
-        options:
-          - auth
-          - members
-          - admin
 
 jobs:
-  greet:
+  run-suites:
     runs-on: ubuntu-latest
-
     steps:
-    - name: Send greeting
-      run: echo "${{ github.event.inputs.suite }}"
+      - name: Run Suites
+        if: ${{ github.events.inputs.suite }}
+        run: |
+          echo ${{ github.events.inputs.suite }}
